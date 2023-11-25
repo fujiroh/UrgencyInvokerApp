@@ -8,6 +8,9 @@ namespace LogicalValueLibrary
         private const int _ValidDigit = 6;
         private readonly double _value;
 
+        public static LogicalValue Zero => new LogicalValue(0D);
+        public static LogicalValue Invalid => new LogicalValue(double.NaN);
+        
         public double Value => _value;
 
         public static LogicalValue Create(double value)
@@ -18,6 +21,11 @@ namespace LogicalValueLibrary
         private LogicalValue(double value)
         {
             _value = Math.Round(value, _ValidDigit);
+        }
+
+        public static LogicalValue Pow(LogicalValue value, int pow)
+        {
+            return new LogicalValue(Math.Pow(value._value, pow));
         }
 
         # region 四則演算
