@@ -4,6 +4,8 @@ namespace LogicalValueLibrary
 {
     public class LogicalValue : IEquatable<LogicalValue>
     {
+        // 有効数字指定
+        private const int _ValidDigit = 6;
         private readonly double _value;
 
         public double Value => _value;
@@ -15,7 +17,7 @@ namespace LogicalValueLibrary
 
         private LogicalValue(double value)
         {
-            _value = value;
+            _value = Math.Round(value, _ValidDigit);
         }
 
         # region 四則演算
@@ -34,7 +36,7 @@ namespace LogicalValueLibrary
         {
             return new LogicalValue(value1._value * value2._value);
         }
-        
+
         public static LogicalValue operator *(LogicalValue value1, double value2)
         {
             return new LogicalValue(value1._value * value2);
