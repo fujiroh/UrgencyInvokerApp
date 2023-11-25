@@ -1,0 +1,80 @@
+﻿using System;
+
+namespace LogicalValueLibrary
+{
+    public class LogicalValue : IEquatable<LogicalValue>
+    {
+        private readonly double _value;
+
+        public double Value => _value;
+
+        public static LogicalValue Create(double value)
+        {
+            return new LogicalValue(value);
+        }
+
+        private LogicalValue(double value)
+        {
+            _value = value;
+        }
+
+        # region 四則演算
+
+        public static LogicalValue operator +(LogicalValue value1, LogicalValue value2)
+        {
+            return new LogicalValue(value1._value + value2._value);
+        }
+
+        public static LogicalValue operator -(LogicalValue value1, LogicalValue value2)
+        {
+            return new LogicalValue(value1._value - value2._value);
+        }
+
+        public static LogicalValue operator *(LogicalValue value1, LogicalValue value2)
+        {
+            return new LogicalValue(value1._value * value2._value);
+        }
+        
+        public static LogicalValue operator *(LogicalValue value1, double value2)
+        {
+            return new LogicalValue(value1._value * value2);
+        }
+
+        public static LogicalValue operator /(LogicalValue value1, LogicalValue value2)
+        {
+            return new LogicalValue(value1._value / value2._value);
+        }
+
+        public static bool operator ==(LogicalValue value1, LogicalValue value2)
+        {
+            return value1 != null && value1.Equals(value2);
+        }
+
+        public static bool operator !=(LogicalValue value1, LogicalValue value2)
+        {
+            return !(value1 == value2);
+        }
+
+        #endregion
+
+        public bool Equals(LogicalValue other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return _value.Equals(other._value);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != GetType()) return false;
+            return Equals((LogicalValue) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return _value.GetHashCode();
+        }
+    }
+}
