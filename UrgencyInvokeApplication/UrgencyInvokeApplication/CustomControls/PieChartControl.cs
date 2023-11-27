@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace UrgencyInvokeApplication
+namespace UrgencyInvokeApplication.CustomControls
 {
     public partial class PieChartControl : UserControl
     {

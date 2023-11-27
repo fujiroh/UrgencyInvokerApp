@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace UrgencyInvokeApplication
+namespace UrgencyInvokeApplication.CustomControls
 {
     partial class PieChartControl
     {
