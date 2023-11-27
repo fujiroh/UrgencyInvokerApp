@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace UrgencyInvokeApplication
 {
@@ -14,6 +15,12 @@ namespace UrgencyInvokeApplication
         public MainForm()
         {
             InitializeComponent();
+            InitializeControl();
+        }
+
+        private void InitializeControl()
+        {
+            _dockPanel.Theme = new VS2015BlueTheme();
         }
     }
 }

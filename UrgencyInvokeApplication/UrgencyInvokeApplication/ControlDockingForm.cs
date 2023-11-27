@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace UrgencyInvokeApplication
 {
-    public partial class ControlDockingForm : WeifenLuo.WinFormsUI.Docking.DockContent
+    public partial class ControlDockingForm : DockContent
     {
         public ControlDockingForm()
         {
             InitializeComponent();
+        }
+
+        public void SetControl(Control control)
+        {
+            this.Controls.Add(control);
+            control.Dock = DockStyle.Fill;
         }
     }
 }
