@@ -86,6 +86,7 @@ namespace UrgencyInvokeApplication.CustomControls
             this._closeButton.Size = new System.Drawing.Size(30, 30);
             this._closeButton.TabIndex = 1;
             this._closeButton.UseVisualStyleBackColor = true;
+            this._closeButton.Click += new System.EventHandler(this._closeButton_Click);
             // 
             // CustomPropertyPanel
             // 
@@ -104,8 +105,6 @@ namespace UrgencyInvokeApplication.CustomControls
         private System.Windows.Forms.Panel panel1;
 
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-
-        private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 

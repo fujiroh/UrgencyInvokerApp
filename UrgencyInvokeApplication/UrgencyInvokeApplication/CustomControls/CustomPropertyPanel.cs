@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace UrgencyInvokeApplication.CustomControls
 {
@@ -7,6 +8,11 @@ namespace UrgencyInvokeApplication.CustomControls
         public CustomPropertyPanel()
         {
             InitializeComponent();
+        }
+
+        private void _closeButton_Click(object sender, EventArgs e)
+        {
+            Visible = false;
         }
     }
 }
