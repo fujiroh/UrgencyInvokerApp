@@ -39,11 +39,9 @@
             this._settingMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this._dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,10 +106,6 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this._dockPanel);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Size = new System.Drawing.Size(1084, 560);
             this.splitContainer1.SplitterDistance = 787;
             this.splitContainer1.TabIndex = 2;
@@ -124,14 +118,6 @@
             this._dockPanel.Name = "_dockPanel";
             this._dockPanel.Size = new System.Drawing.Size(787, 560);
             this._dockPanel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 560);
-            this.panel1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -146,14 +132,11 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
-        private System.Windows.Forms.Panel panel1;
 
         private WeifenLuo.WinFormsUI.Docking.DockPanel _dockPanel;
         private System.Windows.Forms.SplitContainer splitContainer1;
