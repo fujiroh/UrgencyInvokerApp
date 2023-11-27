@@ -53,16 +53,31 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ControlDockingWindow.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="ControlDockingWindow.Designer.cs">
+          <DependentUpon>ControlDockingWindow.cs</DependentUpon>
+        </Compile>
         <Compile Include="MainForm.cs">
             <SubType>Form</SubType>
         </Compile>
         <Compile Include="MainForm.Designer.cs">
             <DependentUpon>MainForm.cs</DependentUpon>
         </Compile>
+        <Compile Include="PieChartControl.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="PieChartControl.Designer.cs">
+          <DependentUpon>PieChartControl.cs</DependentUpon>
+        </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <EmbeddedResource Include="MainForm.resx">
           <DependentUpon>MainForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="PieChartControl.resx">
+          <DependentUpon>PieChartControl.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
