@@ -32,12 +32,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this._fileMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this._editMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this._settingMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this._fileCreateFileMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this._fileOpenMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this._fileSaveMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this._fileExitMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this._editMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this._settingMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(49, 47);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 27);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -69,6 +69,30 @@
             this._fileMenuStrip.Size = new System.Drawing.Size(53, 20);
             this._fileMenuStrip.Text = "ファイル";
             // 
+            // _fileCreateFileMenuStrip
+            // 
+            this._fileCreateFileMenuStrip.Name = "_fileCreateFileMenuStrip";
+            this._fileCreateFileMenuStrip.Size = new System.Drawing.Size(122, 22);
+            this._fileCreateFileMenuStrip.Text = "新規作成";
+            // 
+            // _fileOpenMenuStrip
+            // 
+            this._fileOpenMenuStrip.Name = "_fileOpenMenuStrip";
+            this._fileOpenMenuStrip.Size = new System.Drawing.Size(122, 22);
+            this._fileOpenMenuStrip.Text = "開く";
+            // 
+            // _fileSaveMenuStrip
+            // 
+            this._fileSaveMenuStrip.Name = "_fileSaveMenuStrip";
+            this._fileSaveMenuStrip.Size = new System.Drawing.Size(122, 22);
+            this._fileSaveMenuStrip.Text = "保存";
+            // 
+            // _fileExitMenuStrip
+            // 
+            this._fileExitMenuStrip.Name = "_fileExitMenuStrip";
+            this._fileExitMenuStrip.Size = new System.Drawing.Size(122, 22);
+            this._fileExitMenuStrip.Text = "終了";
+            // 
             // _editMenuStrip
             // 
             this._editMenuStrip.Name = "_editMenuStrip";
@@ -80,30 +104,6 @@
             this._settingMenuStrip.Name = "_settingMenuStrip";
             this._settingMenuStrip.Size = new System.Drawing.Size(43, 20);
             this._settingMenuStrip.Text = "設定";
-            // 
-            // _fileCreateFileMenuStrip
-            // 
-            this._fileCreateFileMenuStrip.Name = "_fileCreateFileMenuStrip";
-            this._fileCreateFileMenuStrip.Size = new System.Drawing.Size(152, 22);
-            this._fileCreateFileMenuStrip.Text = "新規作成";
-            // 
-            // _fileOpenMenuStrip
-            // 
-            this._fileOpenMenuStrip.Name = "_fileOpenMenuStrip";
-            this._fileOpenMenuStrip.Size = new System.Drawing.Size(152, 22);
-            this._fileOpenMenuStrip.Text = "開く";
-            // 
-            // _fileSaveMenuStrip
-            // 
-            this._fileSaveMenuStrip.Name = "_fileSaveMenuStrip";
-            this._fileSaveMenuStrip.Size = new System.Drawing.Size(152, 22);
-            this._fileSaveMenuStrip.Text = "保存";
-            // 
-            // _fileExitMenuStrip
-            // 
-            this._fileExitMenuStrip.Name = "_fileExitMenuStrip";
-            this._fileExitMenuStrip.Size = new System.Drawing.Size(152, 22);
-            this._fileExitMenuStrip.Text = "終了";
             // 
             // MainForm
             // 
