@@ -39,9 +39,11 @@
             this._settingMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this._dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
+            this._customPropertyPanel = new UrgencyInvokeApplication.CustomControls.CustomPropertyPanel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this._fileMenuStrip, this._editMenuStrip, this._settingMenuStrip});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1084, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(947, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,8 +60,8 @@
             // 
             this._fileMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this._fileCreateFileMenuStrip, this._fileOpenMenuStrip, this._fileSaveMenuStrip, this._fileExitMenuStrip});
             this._fileMenuStrip.Name = "_fileMenuStrip";
-            this._fileMenuStrip.Size = new System.Drawing.Size(36, 20);
-            this._fileMenuStrip.Text = "git ";
+            this._fileMenuStrip.Size = new System.Drawing.Size(53, 20);
+            this._fileMenuStrip.Text = "ファイル";
             // 
             // _fileCreateFileMenuStrip
             // 
@@ -106,8 +108,12 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this._dockPanel);
-            this.splitContainer1.Size = new System.Drawing.Size(1084, 560);
-            this.splitContainer1.SplitterDistance = 787;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this._customPropertyPanel);
+            this.splitContainer1.Size = new System.Drawing.Size(947, 642);
+            this.splitContainer1.SplitterDistance = 687;
             this.splitContainer1.TabIndex = 2;
             // 
             // _dockPanel
@@ -116,14 +122,22 @@
             this._dockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this._dockPanel.Location = new System.Drawing.Point(0, 0);
             this._dockPanel.Name = "_dockPanel";
-            this._dockPanel.Size = new System.Drawing.Size(787, 560);
+            this._dockPanel.Size = new System.Drawing.Size(687, 642);
             this._dockPanel.TabIndex = 0;
+            // 
+            // _customPropertyPanel
+            // 
+            this._customPropertyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._customPropertyPanel.Location = new System.Drawing.Point(0, 0);
+            this._customPropertyPanel.Name = "_customPropertyPanel";
+            this._customPropertyPanel.Size = new System.Drawing.Size(256, 642);
+            this._customPropertyPanel.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 584);
+            this.ClientSize = new System.Drawing.Size(947, 666);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -132,11 +146,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private UrgencyInvokeApplication.CustomControls.CustomPropertyPanel _customPropertyPanel;
 
         private WeifenLuo.WinFormsUI.Docking.DockPanel _dockPanel;
         private System.Windows.Forms.SplitContainer splitContainer1;
